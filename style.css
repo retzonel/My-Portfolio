@@ -226,6 +226,7 @@ section {
 
 .contacts ul li a img:hover {
 	transform: translateY(-3px);
+	scale: 1.025;
 	opacity: 0.8;
 }
 
