@@ -1,0 +1,366 @@
+/* Base styles and variables */
+:root {
+	--color-primary: #1d3853;
+	--color-secondary: #ffffff;
+	--color-accent: rgb(10, 28, 32);
+	--color-background: rgb(6, 20, 23);
+	--color-border: rgba(255, 255, 255, 0.25);
+	--color-highlights: #1ed760;
+	--font-primary: 'Poppins', sans-serif;
+	--transition: 0.3s ease-in-out;
+	--container-padding: clamp(1rem, 5vw, 6rem);
+	--section-spacing: clamp(2rem, 5vw, 4rem);
+}
+
+* {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--font-primary);
+	line-height: 1.6;
+	color: var(--color-secondary);
+	background: rgb(6, 20, 23);
+	background-image: url(images/patterns.png);
+}
+
+/* Header */
+header {
+	padding: 1.5rem var(--container-padding);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(6, 20, 23, 0.651)
+}
+
+header img {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+}
+header h3{
+	font-size: 1.35rem;
+}
+header a{
+	scale: 1;
+	color: var(--color-highlights);
+}
+header a:active{
+	scale: 0.9;
+	color: var(--color-highlights);
+}
+header a:hover{
+	color: var(--color-highlights);
+}
+
+.github-link {
+	font-size: 1.2rem;
+	color: var(--color-highlights);
+	padding: 0.5rem 1rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	transition: var(--transition);
+	border: none;
+	cursor: pointer;
+	font-weight: 600;
+	background-color: transparent;
+}
+
+.github-link:hover {
+	scale: 1.05;
+}
+
+.github-link img {
+	width: 2rem;
+	height: 2rem;
+}
+
+.about-me{
+	height: 30rem;
+}
+
+/* Typography */
+h1 {
+	font-size: clamp(2rem, 5vw, 3rem);
+	margin-bottom: 1.5rem;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: clamp(1.5rem, 4vw, 2.25rem);
+	margin-bottom: 1rem;
+}
+
+h4 {
+	font-size: clamp(1.1rem, 3vw, 1.35rem);
+	margin-bottom: 0.5rem;
+}
+
+/* Sections */
+section {
+	padding: var(--section-spacing) var(--container-padding);
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+/* About Section */
+.about-me {
+	text-align: center;
+	max-width: 800px;
+	margin: 0 auto 3rem;
+}
+
+.about-me button {
+	margin-top: 1.5rem;
+	text-transform: capitalize;
+	padding: 1rem;
+}
+
+/* Skills Section */
+#skills-contianer {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.skills-card {
+	border: .25rem solid var(--color-border);
+	border-width: 0 0 .1rem .6rem;
+	background-color: var(--color-accent);
+	padding: 2rem;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	transition: var(--transition);
+}
+
+.skills-card:hover {
+	/* transform: translateY(-5px); */
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+	scale: .98;
+}
+
+/* Projects Section */
+#projects-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.projects-card {
+	padding: 1.5rem;
+	border: .25rem solid var(--color-border);
+	border-width: 0 0 .1rem .6rem;
+	background-color: var(--color-accent);
+	width: 100%;
+	transition: var(--transition);
+}
+
+.projects-card:hover {
+	/* transform: translateY(-5px); */
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+	scale: 0.98;
+}
+
+.projects-card h4 {
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
+}
+
+.projects-card h4 span {
+	color: var(--color-primary);
+	font-size: 0.9rem;
+}
+
+.projects-card #project-preview {
+	width: 100%;
+	height: auto;
+	max-height: 200px;
+	object-fit: cover;
+	border-radius: 0.5rem;
+	margin: 0.5rem 0;
+}
+
+.projects-card .redirect img {
+	width: 1rem;
+	height: 1rem;
+	background: none;
+}
+
+.projects-card .link-holder{
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+#other-projects{
+	margin-top: 2rem;
+}
+#other-projects img{
+	width: 1.1rem;
+}
+
+/* Contact Section */
+.contacts ul {
+	display: flex;
+	gap: 1.5rem;
+	justify-content: center;
+	list-style: none;
+	margin-top: 2rem;
+	flex-wrap: wrap;
+	background-color: var(--color-background);
+}
+
+.contacts ul li a img {
+	width: 2rem;
+	height: 2rem;
+	transition: var(--transition);
+	
+}
+
+.contacts ul li a img:hover {
+	transform: translateY(-3px);
+	opacity: 0.8;
+}
+
+/* Experience Section */
+.experience {
+	padding: 1.5rem;
+	margin-top: 1.5rem;
+	text-align: left;
+}
+#experience-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.experience-card{
+	border: .25rem solid var(--color-border);
+	border-width: 0 0 .1rem .6rem;
+	background-color: var(--color-accent);
+	padding: 1rem;
+	margin: 1rem;
+}
+#experience{
+	border: .25rem solid var(--color-border);
+	border-width: 0 0 .1rem .6rem;
+	background-color: var(--color-accent);
+	transition: var(--transition);
+	width: 40rem;
+}
+#experience:hover{
+	scale: .98;
+	transition: var(--transition);
+}
+
+#shadowy {
+	font-size: 0.9rem;
+	color: #6666664d;
+}
+
+/* Button Styles */
+button {
+	background-color: var(--color-accent);
+	color: var(--color-secondary);
+	padding: 0.75rem 1.5rem;
+	border: none;
+	font-weight: 600;
+	cursor: pointer;
+	transition: var(--transition);
+	font-weight: 1000;
+	border: .25rem solid var(--color-border);
+	border-width: 0 0 .1rem .4rem;
+	background-color: var(--color-accent);
+}
+
+button:hover {
+	transform: translateY(-2px);
+	border-width: .1rem .4rem 0 0;
+	scale: 1.01;
+}
+
+/* Links */
+a {
+	color: var(--color-highlights);
+	text-decoration: none;
+	transition: var(--transition);
+}
+
+a:hover {
+	color: var(--color-primary);
+}
+
+.redirect {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+/* Footer */
+footer {
+	color: var(--color-secondary);
+	padding: 1.5rem;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.icon{
+	filter: brightness(0) saturate(100%) invert(70%) sepia(90%) saturate(713%) hue-rotate(79deg) brightness(90%) contrast(86%);	
+}
+
+/* Emoji Animation */
+@keyframes bounce {
+
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-8px);
+	}
+}
+
+.emoji {
+	display: inline-block;
+	animation: bounce 1s ease infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	header {
+		padding: 2rem;
+		flex-direction: row;
+		gap: 1rem;
+	}
+
+	.github-link {
+		width: auto;
+	}
+
+	section {
+		padding: 2rem 1rem;
+	}
+
+	#projects-container {
+		grid-template-columns: 1fr;
+	}
+
+	.projects-card {
+		width: 100%;
+	}
+
+	.contacts ul {
+		gap: 1rem;
+	}
+
+	#other-projects{
+		margin-top: 2rem;
+	}
+}
