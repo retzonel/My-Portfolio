@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Retzonel || Software Engineer</title>
-  <meta name="description"
-    content="Godswill Nwocha (Retzonel) is a software engineer specialized in building digital technology (currently games and apps, but is a vivid and continuous learner open to more tech fields)" />
-
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-
+  <title>Victor Jack | Software Engineer</title>
+  <meta name="description" content="Victor Jack is a Software Engineer specialized in building exceptional digital experiences" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
   <style>
     * {
       margin: 0;
@@ -43,12 +40,11 @@
     }
 
     body {
-      font-family: 'JetBrains Mono', monospace;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       background: var(--bg-dark);
       color: var(--text-primary);
       line-height: 1.6;
       overflow-x: hidden;
-      font-weight: 600;
     }
 
     /* Navigation */
@@ -113,9 +109,9 @@
       background: none;
       border: 2px solid var(--border);
       color: var(--text-primary);
-      font-size: 0.85rem;
+      font-size: 1rem;
       cursor: pointer;
-      padding: 0.35rem 0.55rem;
+      padding: 0.4rem 0.6rem;
       border-radius: 8px;
       transition: all 0.3s;
       margin-right: 0.5rem;
@@ -135,7 +131,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 4rem 2rem 4rem;
+      padding: 8rem 2rem 4rem;
       position: relative;
     }
 
@@ -161,7 +157,7 @@
       animation: fadeIn 0.8s ease-out 0.2s backwards;
     }
 
-    .hero-content>p {
+    .hero-content > p {
       font-size: 1.15rem;
       color: var(--text-secondary);
       max-width: 700px;
@@ -220,27 +216,18 @@
       display: flex;
       justify-content: center;
       gap: 2rem;
-      font-size: 1.5rem;
+      font-size: 1rem;
       animation: fadeIn 0.8s ease-out 0.8s backwards;
     }
 
     .social-links a {
       color: var(--text-secondary);
       text-decoration: none;
-      transition: all 0.3s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      border: 2px solid var(--border);
+      transition: color 0.3s;
     }
 
     .social-links a:hover {
       color: var(--accent-green);
-      border-color: var(--accent-green);
-      transform: translateY(-3px);
     }
 
     /* Section Styling */
@@ -248,7 +235,7 @@
       padding: 6rem 2rem;
       max-width: 1400px;
       margin: 0 auto;
-      scroll-margin-top: 0px;
+      scroll-margin-top: 80px;
     }
 
     .section-title {
@@ -380,10 +367,9 @@
     /* Projects Grid */
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 280px));
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
       gap: 2rem;
       margin-top: 3rem;
-      justify-content: center;
     }
 
     .project-card {
@@ -392,10 +378,6 @@
       overflow: hidden;
       border: 1px solid var(--border);
       transition: all 0.3s;
-      width: 280px;
-      height: 380px;
-      display: flex;
-      flex-direction: column;
     }
 
     .project-card:hover {
@@ -404,11 +386,10 @@
     }
 
     .project-image {
-      height: 160px;
+      height: 200px;
       background: var(--border);
       position: relative;
       overflow: hidden;
-      flex-shrink: 0;
     }
 
     .project-image img {
@@ -418,54 +399,36 @@
     }
 
     .project-content {
-      padding: 1.25rem;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
+      padding: 1.5rem;
     }
 
     .project-content h3 {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+      margin-bottom: 0.75rem;
     }
 
     .project-content p {
       color: var(--text-secondary);
-      margin-bottom: 0.75rem;
-      font-size: 0.8rem;
-      line-height: 1.4;
-      flex-grow: 1;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
     }
 
     .project-tech {
       color: var(--accent-green);
-      font-size: 0.75rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .project-links {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
     }
 
     .project-links a {
       color: var(--accent-green);
       text-decoration: none;
-      font-size: 1.2rem;
-      transition: all 0.3s;
-      display: flex;
-      align-items: center;
-      gap: 0.25rem;
+      margin-right: 1rem;
+      font-size: 0.9rem;
+      transition: color 0.3s;
     }
 
     .project-links a:hover {
       color: var(--accent-dim);
-      transform: scale(1.1);
-    }
-
-    .project-links a.live-link {
-      font-size: 0.8rem;
     }
 
     /* Contact Section */
@@ -505,7 +468,6 @@
         opacity: 0;
         transform: translateY(20px);
       }
-
       to {
         opacity: 1;
         transform: translateY(0);
@@ -582,13 +544,12 @@
     }
   </style>
 </head>
-
 <body>
 
   <!-- Navigation -->
   <nav>
     <div class="nav-inner">
-      <div class="nav-logo">Retzonel ⚡</div>
+      <div class="nav-logo">Victor Jack</div>
       <div style="display: flex; align-items: center; gap: 0.5rem;">
         <button class="theme-toggle" id="themeToggle">🌙</button>
         <button class="menu-toggle" onclick="toggleMenu()">☰</button>
@@ -606,39 +567,19 @@
   <!-- Hero -->
   <section id="hero">
     <div class="hero-content">
-      <p class="retro-subtitle">&gt; CREATIVE SOFTWARE DEVELOPER</p>
-      <h1 class="retro-title">---</h1>
+      <p class="retro-subtitle">&gt; FULL STACK DEVELOPER</p>
+      <h1 class="retro-title">Victor Jack</h1>
       <p>
-        I'm <strong>Godswill (Retzonel)</strong>, a game and mobile app developer who turns ideas into immersive,
-        user-focused games and
-        apps by blending solid technical skills with creative design ~ creating entertaining and impactful digital
-        experiences.
+        Hi, my name is <strong>Victor Jack</strong>, I am a software Engineer, a true definition of a Philomath and a Tech addict. I strive to bring innovative ideas to life. My goal is to craft seamless digital experiences that not only meet but exceed client expectations.
       </p>
       <div class="hero-buttons">
         <a href="#projects" class="btn btn-primary">VIEW PROJECTS</a>
         <a href="/VictorJack.pdf" download class="btn btn-outline">DOWNLOAD CV</a>
       </div>
       <div class="social-links">
-        <a href="https://github.com/retzonel" target="_blank" title="GitHub">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-          </svg>
-        </a>
-        <a href="https://www.linkedin.com/in/godswill-nwocha-909035390/" target="_blank" title="LinkedIn">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-          </svg>
-        </a>
-        <a href="mailto:nwochagodswill.com" title="Email">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
-          </svg>
-        </a>
-
-        <!-- add X(twitter) and itch.io icons-->
+        <a href="https://github.com/thedon-dev" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/victorjackadokiye" target="_blank">LinkedIn</a>
+        <a href="mailto:viktoh7351@gmail.com">Email</a>
       </div>
     </div>
   </section>
@@ -647,37 +588,34 @@
   <section id="about">
     <h2 class="section-title">About Me</h2>
     <p class="section-subtitle">
-      I'm a passionate software developer and tech enthusiast with a love for building tech that matters. My journey in
-      tech
-      started with the urge to take my ideas to life, and since then, I've been dedicated to honing my skills and
-      creating...
+      I'm a passionate software developer with a love for creating digital experiences that matter. My journey in tech started with curiosity and has evolved into a commitment to building softwares and solutions that bridge creativity and functionality.
     </p>
-
+    
     <div class="skills-grid">
       <div class="skill-card">
-        <strong>Game Development</strong>
-        <p>Unity, C#, ShaderGraph</p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Cross-platform video games</p>
+        <strong>Frontend Development</strong>
+        <p>React, TypeScript, Next.js, Tailwind CSS</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Building responsive and interactive user interfaces</p>
+      </div>
+      <div class="skill-card">
+        <strong>Backend Development</strong>
+        <p>Node.js, Express.js, MongoDB</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Scalable server-side applications and APIs</p>
       </div>
       <div class="skill-card">
         <strong>Mobile Development</strong>
-        <p>Flutter, Dart</p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Building cross-platform mobile experiences with Flutter</p>
+        <p>React Native, Expo</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Building cross-platform mobile experiences with native performance</p>
       </div>
       <div class="skill-card">
-        <strong>Deployment</strong>
-        <p>Git && Github</p>
+        <strong>DevOps & Deployment</strong>
+        <p>Docker, Vercel, CI/CD, Github, Pxxl</p>
         <p style="margin-top: 0.5rem; font-size: 0.9rem;">Automated deployment and cloud infrastructure</p>
       </div>
-      <div class="skill-card">
-        <strong>Frontend Development</strong>
-        <p>HTML, CSS, JS</p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Building responsive and interactive user interfaces</p>
-      </div>
     </div>
-
+    
     <div class="status-box">
-      <p class="status-text">&gt; CURRENT STATUS: AVAILABLE FOR PROJECTS && GIGS</p>
+      <p class="status-text">&gt; CURRENT STATUS: AVAILABLE FOR PROJECTS</p>
       <p style="color: var(--text-secondary); margin-top: 0.5rem;">Ready to collaborate on your next big idea</p>
     </div>
   </section>
@@ -686,138 +624,69 @@
   <section id="experience">
     <h2 class="section-title">Experience</h2>
     <p class="section-subtitle">
-      My professional journey through the tech industry, working with innovative companies and delivering impactful
-      solutions.
+      My professional journey through the tech industry, working with innovative companies and delivering impactful solutions.
     </p>
-
+    
     <div class="timeline">
       <div class="timeline-entry">
-        <h3>Game Designer @ Creotly Studio</h3>
-        <span class="date">2024 – Present • Remote</span>
-        <p>Developed and designed games and worked onn client projects for the studio.</p>
-        <small>Unity • C#</small>
+        <h3>Software Engineer @ Silicon Delta Innovation Hub</h3>
+        <span class="date">Jul 2024 – Jul 2025 • Port-Harcourt</span>
+        <p>Developed responsive user interfaces for clients and in-house projects. Collaborated with UX designers to implement pixel-perfect designs.</p>
+        <small>React • Next.js • Tailwind • React Native</small>
       </div>
-
+      
       <div class="timeline-entry">
-        <h3>Game Developer @ Two Sides Studios</h3>
-        <span class="date"> 2022 – 2023 • Remote</span>
-        <p>Built, prototyped and released responsive and optimized mobile games for the studio.</p>
-        <small>Unity • C#</small>
+        <h3>Frontend Developer @ Let's Build Labs</h3>
+        <span class="date">Feb 2025 – Present • Remote</span>
+        <p>Led development of scalable web3 applications using NextJS. Implemented CI/CD pipelines reducing deployment time by 40%.</p>
+        <small>Next.js • TypeScript • Firebase • Web3</small>
       </div>
-
-      <div class="status-box" style="margin-top: 4rem;">
-        <p class="status-text">&gt; TOTAL EXPERIENCE: 3 YEARS+</p>
-        <p style="color: var(--text-secondary); margin-top: 0.5rem;">Continuously learning and evolving with technology
-        </p>
+      
+      <div class="timeline-entry">
+        <h3>Frontend Developer @ Kleeth Technologies</h3>
+        <span class="date">Duration • Location</span>
+        <p>Led frontend development for cross-platform mobile and web applications, ensuring high-quality user experiences. Oversaw the entire deployment process, implementing and managing CI/CD pipelines to automate and accelerate application delivery.</p>
+        <small>React • React Native • CI/CD</small>
       </div>
+      
+      <div class="timeline-entry">
+        <h3>Frontend Developer @ Baanza App</h3>
+        <span class="date">Duration • Location</span>
+        <p>Built and maintained the user interface for both web and mobile applications. Developed responsive, high-performance frontends using ReactJS, Next.js, and React Native. Handled deployment and release processes for all applications.</p>
+        <small>React • Next.js • React Native • CI/CD</small>
+      </div>
+    </div>
+    
+    <div class="status-box" style="margin-top: 4rem;">
+      <p class="status-text">&gt; TOTAL EXPERIENCE: 3 YEARS+</p>
+      <p style="color: var(--text-secondary); margin-top: 0.5rem;">Continuously learning and evolving with technology</p>
+    </div>
   </section>
 
   <!-- Projects -->
   <section id="projects">
     <h2 class="section-title">Projects</h2>
     <p class="section-subtitle">
-      A collection of projects showcasing different aspects of modern web development, from user interfaces to backend
-      architecture.
+      A collection of projects showcasing different aspects of modern web development, from user interfaces to backend architecture.
     </p>
-
+    
     <div class="projects-grid">
-
-      <!-- 1 -->
       <div class="project-card">
         <div class="project-image">
-          <img src="assets/images/project-cards/geojump-pic.jpg" alt="Geometry Jump"
-            onerror="this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
+          <img src="/Spa-Booking.png" alt="SPA Booking" onerror="this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
         </div>
         <div class="project-content">
-          <h3>Geometry Jump</h3>
-          <p>A fun endless jumper game for andriod devices</p>
-          <p class="project-tech">Unity • C# • ShaderGraph</p>
+          <h3>SPA Booking System</h3>
+          <p>Full-featured spa appointment system with customer booking interface and comprehensive admin dashboard for managing appointments and services.</p>
+          <p class="project-tech">React • Node.js • MongoDB • Express</p>
           <div class="project-links">
-            <a href="https://github.com/retzonel/OUR2DGAME" target="_blank" title="View Code">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-              </svg>
-            </a>
-            <a href="https://twosides-games.itch.io/geometry-jump-demo" target="_blank" class="live-link">Live Demo
-              →</a>
+            <a href="https://github.com/thedon-dev/salon_site" target="_blank">View Code →</a>
+            <a href="https://salon-site-lilac.vercel.app" target="_blank">Live Demo →</a>
           </div>
         </div>
       </div>
-
-      <!-- 2 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="assets/images/project-cards/agent-pic.jpg" alt="Geometry Jump"
-            onerror="this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
-        </div>
-        <div class="project-content">
-          <h3>Agent Info</h3>
-          <p>A 3d isometeric action/puzzle game made for GameUp Africa game jam for democracy 2024 which my Team won.</p>
-          <p class="project-tech">Unity • C# • ShaderGraph</p>
-          <div class="project-links">
-            <a href="https://github.com/Creotly-Studios/Disinformation-Agent-Info/tree/Dev-Retzonel" target="_blank" title="View Code">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-              </svg>
-            </a>
-            <a href="https://creotly-games.itch.io/agent-info" target="_blank" class="live-link">Live Demo
-              →</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 3 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="assets/images/project-cards/geojump-pic.jpg" alt="Geometry Jump"
-            onerror="this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
-        </div>
-        <div class="project-content">
-          <h3>Geometry Jump</h3>
-          <p>A fun endless jumper game for andriod devices</p>
-          <p class="project-tech">Unity • C# • ShaderGraph</p>
-          <div class="project-links">
-            <a href="https://github.com/retzonel/OUR2DGAME" target="_blank" title="View Code">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-              </svg>
-            </a>
-            <a href="https://twosides-games.itch.io/geometry-jump-demo" target="_blank" class="live-link">Live Demo
-              →</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 4 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="assets/images/project-cards/geojump-pic.jpg" alt="Geometry Jump"
-            onerror="this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
-        </div>
-        <div class="project-content">
-          <h3>Geometry Jump</h3>
-          <p>A fun endless jumper game for andriod devices</p>
-          <p class="project-tech">Unity • C# • ShaderGraph</p>
-          <div class="project-links">
-            <a href="https://github.com/retzonel/OUR2DGAME" target="_blank" title="View Code">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-              </svg>
-            </a>
-            <a href="https://twosides-games.itch.io/geometry-jump-demo" target="_blank" class="live-link">Live Demo
-              →</a>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
+      
+      <!-- Add more project cards as needed -->
     </div>
   </section>
 
@@ -827,23 +696,21 @@
     <p class="section-subtitle">
       Ready to collaborate on your next project? Let's connect and build something amazing together.
     </p>
-
+    
     <div class="status-box">
       <p class="status-text">&gt; STATUS: AVAILABLE FOR WORK</p>
-      <p style="color: var(--text-secondary); margin-top: 0.5rem;">Currently accepting new projects, collaborations and
-        gigs.
-        Response time: immediately</p>
+      <p style="color: var(--text-secondary); margin-top: 0.5rem;">Currently accepting new projects and collaborations. Response time: immediately</p>
     </div>
-
+    
     <div class="contact-info">
-      <a href="mailto:viktoh7351@gmail.com">nwochagodswill@gmail.com</a>
-      <a href="tel:+2349057696490">+2348064677182</a>
+      <a href="mailto:viktoh7351@gmail.com">viktoh7351@gmail.com</a>
+      <a href="tel:+2349057696490">+234 905 7696 490</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Retzonel</p>
+    <p>© 2025 Victor Jack — Built with passion and code</p>
   </footer>
 
   <script>
@@ -851,9 +718,9 @@
     function toggleTheme() {
       const body = document.body;
       const themeToggle = document.getElementById('themeToggle');
-
+      
       body.classList.toggle('light-mode');
-
+      
       if (body.classList.contains('light-mode')) {
         themeToggle.textContent = '☀️';
         localStorage.setItem('theme', 'light');
@@ -867,15 +734,8 @@
     window.addEventListener('DOMContentLoaded', () => {
       const savedTheme = localStorage.getItem('theme');
       const themeToggle = document.getElementById('themeToggle');
-
-      // Check system preference
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-      // Priority: saved preference > system preference > light mode default
-      if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-        document.body.classList.remove('light-mode');
-        themeToggle.textContent = '🌙';
-      } else {
+      
+      if (savedTheme === 'light') {
         document.body.classList.add('light-mode');
         themeToggle.textContent = '☀️';
       }
@@ -891,14 +751,12 @@
 
     function scrollToSection(id) {
       const element = document.getElementById(id);
-      element.scrollIntoView({
-        behavior: 'smooth'
-      });
-
+      element.scrollIntoView({ behavior: 'smooth' });
+      
       // Close mobile menu
       const navLinks = document.getElementById('navLinks');
       navLinks.classList.remove('active');
-
+      
       // Update active state
       document.querySelectorAll('.nav-links button').forEach(btn => {
         btn.classList.remove('active');
@@ -912,14 +770,11 @@
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth'
-          });
+          target.scrollIntoView({ behavior: 'smooth' });
         }
       });
     });
   </script>
 
 </body>
-
 </html>
