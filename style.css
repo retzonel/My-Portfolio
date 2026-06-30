@@ -384,7 +384,7 @@ section {
   border: 1px solid var(--border);
   transition: all 0.3s;
   width: 280px;
-  height: 380px;
+  height: 400px;
   display: flex;
   flex-direction: column;
 }
