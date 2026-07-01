@@ -155,7 +155,7 @@ body.light-mode nav {
   animation: fadeIn 0.8s ease-out 0.2s backwards;
 }
 
-.hero-content > p {
+.hero-content>p {
   font-size: 1.15rem;
   color: var(--text-secondary);
   max-width: 700px;
@@ -363,6 +363,14 @@ section {
 
 .timeline-entry:last-child::after {
   display: none;
+}
+
+.timeline-entry p {
+  font-style: italic;
+}
+
+.timeline-entry h3{
+  font-weight: bolder;
 }
 
 /* Projects Grid */
