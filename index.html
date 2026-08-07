@@ -8,14 +8,17 @@
   <meta name="description"
     content="Godswill Nwocha (Retzonel) is a software engineer specialized in building digital technology (currently games and apps, but is a vivid and continuous learner open to more tech fields)" />
 
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="style.css">
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 
 </head>
 
@@ -43,7 +46,10 @@
   <section id="hero">
     <div class="hero-content">
       <p class="retro-subtitle">&gt; CREATIVE SOFTWARE DEVELOPER</p>
-      <h1 class="retro-title">---</h1>
+      <h1 class="retro-title">
+        <span class="sr-only">Hello</span>
+        <span id="heroGreeting" aria-hidden="true"></span><span class="type-caret" aria-hidden="true"></span>
+      </h1>
       <p>
         I'm <strong>Godswill (Retzonel)</strong>, a software developer who turns ideas into immersive,
         user-focused experiences by blending solid technical skills with creative design ~ creating entertaining and
@@ -202,13 +208,14 @@
       <div class="project-card">
         <div class="project-image">
           <img src="assets/images/project-cards/geojump-pic.jpg" alt="Geometry Jump"
-            onerror="this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
+            onerror="this.parentElement.style.background='var(--bg-card)'">
         </div>
         <div class="project-content">
           <h3>Geometry Jump</h3>
           <p>A fun endless jumper game for andriod devices</p>
           <p class="project-tech">Unity • C# • ShaderGraph</p>
           <div class="project-links">
+            <a href="dedicated-project-pages/geometry-jump.html" class="live-link" title="Project Details">Details →</a>
             <a href="https://github.com/retzonel/OUR2DGAME" target="_blank" title="View Code">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path
@@ -225,7 +232,7 @@
       <div class="project-card">
         <div class="project-image">
           <img src="assets/images/project-cards/agent-pic.jpg" alt="Geometry Jump"
-            onerror="this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
+            onerror="this.parentElement.style.background='var(--bg-card)'">
         </div>
         <div class="project-content">
           <h3>Agent Info</h3>
@@ -234,6 +241,7 @@
           </p>
           <p class="project-tech">Unity • C# • ShaderGraph</p>
           <div class="project-links">
+            <a href="dedicated-project-pages/agent-info.html" class="live-link" title="Project Details">Details →</a>
             <a href="https://github.com/Creotly-Studios/Disinformation-Agent-Info/tree/Dev-Retzonel" target="_blank"
               title="View Code">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -252,7 +260,7 @@
       <div class="project-card">
         <div class="project-image">
           <img src="assets/images/project-cards/greenquest-pic.jpg" alt="GreeQuest:RQ"
-            onerror="this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
+            onerror="this.parentElement.style.background='var(--bg-card)'">
         </div>
         <div class="project-content">
           <h3>GreenQuest: Rescue Tides</h3>
@@ -260,6 +268,7 @@
           </p>
           <p class="project-tech">Unity • Illustrator • Audacity</p>
           <div class="project-links">
+            <a href="dedicated-project-pages/greenquest-rescue-tide.html" class="live-link" title="Project Details">Details →</a>
             <a href="https://play.google.com/store/apps/details?id=com.GREENQUEST.GreenQuest_RescueTide&hl=en"
               target="_blank" class="live-link">Play Game
               →</a>
@@ -272,7 +281,7 @@
       <div class="project-card">
         <div class="project-image">
           <img src="assets/images/project-cards/border-shifter-pic.jpg" alt="BorderShifter"
-            onerror="this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
+            onerror="this.parentElement.style.background='var(--bg-card)'">
         </div>
         <div class="project-content">
           <h3>BorderShifter</h3>
@@ -281,6 +290,7 @@
           </p>
           <p class="project-tech">Unity • Illustrator</p>
           <div class="project-links">
+            <a href="dedicated-project-pages/border-shifter.html" class="live-link" title="Project Details">Details →</a>
             <a href="https://github.com/retzonel/border-shifter-game" target="_blank" title="View Code">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path
@@ -303,7 +313,7 @@
       <div class="project-card">
         <div class="project-image">
           <img src="assets/images/project-cards/votrr-pic.jpg" alt="Votrr"
-            onerror="this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
+            onerror="this.parentElement.style.background='var(--bg-card)'">
         </div>
         <div class="project-content">
           <h3>Votrr</h3>
@@ -312,6 +322,7 @@
           </p>
           <p class="project-tech">Flutter • Firebase • Riverpod</p>
           <div class="project-links">
+            <a href="dedicated-project-pages/votrr.html" class="live-link" title="Project Details">Details →</a>
             <a href="https://github.com/retzonel/votrr_app" target="_blank" title="View Code">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path

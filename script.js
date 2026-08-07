@@ -68,3 +68,70 @@ function toggleTheme() {
       }
     });
   });
+
+  // ============================================
+  // HERO GREETING TYPEWRITER
+  // Types "hello" in different languages, deletes it,
+  // then moves to the next. Respects reduced-motion.
+  // ============================================
+  (function heroGreetingTypewriter() {
+    const el = document.getElementById('heroGreeting');
+    if (!el) return;
+
+    const greetings = [
+      'Hello',        // English
+      '你好',          // Chinese
+      'こんにちは',      // Japanese
+      '안녕하세요',       // Korean
+      'Привет',        // Russian
+      'Hallo',         // German
+      'Bonjour',       // French
+      'Hola',          // Spanish
+      'Olá',           // Portuguese
+      'नमस्ते',          // Hindi
+      'Ndewo',         // Igbo
+    ];
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (prefersReducedMotion) {
+      el.textContent = greetings[0];
+      return;
+    }
+
+    const TYPE_SPEED = 110;
+    const DELETE_SPEED = 55;
+    const HOLD_AFTER_TYPE = 1400;
+    const HOLD_AFTER_DELETE = 300;
+
+    let greetingIndex = 0;
+    let charIndex = 0;
+
+    function type() {
+      const current = greetings[greetingIndex];
+
+      if (charIndex <= current.length) {
+        el.textContent = current.slice(0, charIndex);
+        charIndex++;
+        setTimeout(type, TYPE_SPEED);
+      } else {
+        setTimeout(erase, HOLD_AFTER_TYPE);
+      }
+    }
+
+    function erase() {
+      const current = greetings[greetingIndex];
+
+      if (charIndex >= 0) {
+        el.textContent = current.slice(0, charIndex);
+        charIndex--;
+        setTimeout(erase, DELETE_SPEED);
+      } else {
+        greetingIndex = (greetingIndex + 1) % greetings.length;
+        charIndex = 0;
+        setTimeout(type, HOLD_AFTER_DELETE);
+      }
+    }
+
+    type();
+  })();
