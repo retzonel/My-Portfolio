@@ -51,8 +51,8 @@ body {
   overflow-x: hidden;
   font-weight: 400;
   background-image:
-    linear-gradient(rgba(51, 52, 44, 0.15) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(51, 52, 44, 0.15) 1px, transparent 1px);
+    linear-gradient(#33342c12 1px, transparent 1px),
+    linear-gradient(90deg, #33342c12 1px, transparent 1px);
   background-size: 48px 48px;
   background-position: -1px -1px;
 }
@@ -305,7 +305,7 @@ nav {
 .btn {
   padding: 0.9rem 1.85rem;
   border-radius: 0;
-  border: 1px solid var(--border-strong);
+  border: 3px solid var(--border-strong);
   text-decoration: none;
   font-weight: 600;
   font-size: 0.8rem;
@@ -314,6 +314,8 @@ nav {
   text-transform: uppercase;
   transition: all 0.25s;
   display: inline-block;
+      background: var(--bg-dark);
+
 }
 
 .btn-primary {
@@ -328,7 +330,7 @@ nav {
 }
 
 .btn-outline {
-  border: 1px solid var(--border-strong);
+  border: 3px solid var(--border-strong);
   color: var(--text-primary);
   background: transparent;
 }
@@ -348,6 +350,7 @@ nav {
 }
 
 .social-links a {
+  background: var(--bg-dark);
   color: var(--text-secondary);
   text-decoration: none;
   transition: all 0.25s;
@@ -357,7 +360,7 @@ nav {
   width: 42px;
   height: 42px;
   border-radius: 0;
-  border: 1px solid var(--border);
+  border: 1.75px solid var(--border);
 }
 
 .social-links a:hover {
@@ -533,7 +536,7 @@ section {
 }
 
 /* Projects Grid */
-#projects h2 {
+/* #projects h2 {
   font-family: var(--font-mono);
   font-size: 0.95rem;
   font-weight: 600;
@@ -543,7 +546,7 @@ section {
   border-bottom: 1px solid var(--border);
   padding-bottom: 0.75rem;
   margin-top: 3rem;
-}
+} */
 
 .projects-grid {
   display: grid;
@@ -685,6 +688,8 @@ footer {
   font-family: var(--font-mono);
   font-size: 0.85rem;
   letter-spacing: 0.03em;
+        background: var(--bg-dark);
+
 }
 
 /* Animations */
